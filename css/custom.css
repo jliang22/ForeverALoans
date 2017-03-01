@@ -50,3 +50,26 @@ body {
 	background: #fafdf5;
 	text-shadow: 0.15px 0.25px 0px;
 }
+
+.profile {
+	text-align: left;
+    margin: 40px 180px 0px 180px;
+    font-size: 20px;
+}
+
+.profile_reminder h4 {
+font-size:21px;
+color: indianred;
+}
+
+.black {
+    color: black:
+}
+
+.grey {
+    color: grey;
+}
+
+h3 {
+    margin-top: 0px;
+}
