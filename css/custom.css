@@ -51,9 +51,15 @@ body {
 	text-shadow: 0.15px 0.25px 0px;
 }
 
-.profile {
+.custom_content, .profile {
 	text-align: left;
     margin: 40px 180px 0px 180px;
+    font-size: 20px;
+}
+
+.custom_content_index {
+    margin: 40px 180px 0px 180px;
+    text-align:center;
     font-size: 20px;
 }
 
@@ -72,4 +78,12 @@ color: indianred;
 
 h3 {
     margin-top: 0px;
+}
+
+#search {
+	float:right;
+}
+
+.rating_shovel {
+	text-align:left;
 }
