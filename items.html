@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Forever A Loans</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+   <!-- <script type="text/javascript" scr="../js/customjs.js"></script> -->
+    
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div class="container">
+  <div class="row">
+  <div class="col-sm-5">
+  <h3>TJ!</h3></div>
+  <div class="col-sm-5"><input type="text" class="form-control" id="search" placeholder="Search"></div>
+</div>
+<div class="custom_content">
+ <div class="row">
+  <div class="col-sm-12">
+
+<div class="btn-group-justified" role="group" aria-label="...">
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default btn-lg" onClick="toggle_visibility('hideborrowed');">Borrowed</button>
+  </div>
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default btn-lg" onClick="toggle_visibility('hidelend');">Lent</button>
+  </div>
+</div>
+
+
+
+<br>
+<div id='hideborrowed'>
+  <table class="table table-striped" style="text-align: center">
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Gloves</th>
+      <td>Lender: AnnaL</td>
+    </tr>
+    <tr>
+      <th scope="row">Bike</th>
+      <td>Lender: IBYan</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div id='hidelend'>
+  <table class="table table-striped" style="text-align: center">
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Shovel</th>
+      <td>Borrower: Lyanna</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+  </div>
+</div>
+
+<br>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
+
+<script>
+function toggle_visibility(id) {
+   var e = document.getElementById(id);
+   if(e.style.display == 'block')
+      e.style.display = 'none';
+   else
+      e.style.display = 'block';
+}
+</script>
