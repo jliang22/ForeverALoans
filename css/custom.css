@@ -94,3 +94,7 @@ h3 {
 .rating_shovel {
 	text-align:left;
 }
+
+.panel-title {
+	font-size:22px !important;
+}
