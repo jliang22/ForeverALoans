@@ -48,7 +48,6 @@ table.reminders tr:first-child td {
 
 body {
 	background: #fafdf5;
-	text-shadow: 0.15px 0.25px 0px;
 }
 
 .custom_content, .profile {
@@ -69,7 +68,7 @@ color: indianred;
 }
 
 .black {
-    color: black:
+    color: black;
 }
 
 .grey {
