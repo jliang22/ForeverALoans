@@ -97,3 +97,7 @@ h3 {
 .panel-title {
 	font-size:22px !important;
 }
+
+.custom-form {
+    font-size: 14px;
+}

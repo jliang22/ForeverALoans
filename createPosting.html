@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Forever A Loans</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-5">
+            <h3><a href="index.html">TJ!</a></h3></div>
+        <div class="col-sm-5"><input type="text" class="form-control" id="search" placeholder="Search"></div>
+    </div>
+    <div class="custom_content">
+        <h2 style="text-align: center;">Create a Listing</h2>
+        <div class="row">
+            <div class="col-sm-12">
+                <form class="form-group custom-form">
+                    <div class="form-group">
+                        <label for="item-name">Item Name</label>
+                        <input type="text" class="form-control" id="item-name" placeholder="Item Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="item-description">Description</label>
+                        <textarea id="item-description" class="form-control" rows="4" placeholder="Description"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="item-price">Price</label>
+                        <input type="text" class="form-control" id="item-price" placeholder="Price">
+                    </div>
+                    <div class="form-group">
+                        <label for="item-location">Location</label>
+                        <input type="text" class="form-control" id="item-location" placeholder="Location">
+                    </div>
+                    <div class="form-group">
+                        <label for="add-image">Add an Image</label>
+                        <input type="file" id="add-image">
+                    </div>
+                    <div class="form-group">
+                        <label for="terms">Terms and Conditions</label>
+                        <textarea type="text" class="form-control" id="terms" rows="7" readonly>
+                    </textarea>
+                    </div>
+                </form>
+                <button id="btn-create" class="btn btn-default">Create</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+
+<script type="text/javascript">
+    document.getElementById("btn-create").onclick = function() {window.location.href = 'items.html'};
+
+    document.getElementById("terms").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vestibulum bibendum nisl, et feugiat dui suscipit vel. Nulla posuere tristique mattis. Quisque condimentum mauris justo, vel interdum sem congue sit amet. Donec eu mollis dolor. Quisque quam ligula, tempus eget tortor eu, dapibus mattis augue. Morbi nec ante diam. Morbi vel viverra dolor. Ut sit amet faucibus ligula. Aenean vitae rutrum velit, eu hendrerit nisi. Nunc sem justo, iaculis at dolor id, vulputate hendrerit diam. Ut risus sapien, elementum efficitur pharetra id, sagittis sed leo. Maecenas ultrices augue sed est lobortis, quis auctor ante luctus. Quisque volutpat purus risus." +
+        "Integer quis lacinia massa, non scelerisque felis. Integer urna purus, cursus vel convallis sit amet, cursus a elit. Sed non enim vitae ante finibus imperdiet a a augue. Phasellus eget metus tincidunt, ornare ante sit amet, posuere turpis. Mauris tristique, risus porttitor elementum varius, nibh mauris fringilla lorem, at ullamcorper nisl nunc at justo. Duis mauris nunc, ornare quis dui eu, placerat auctor ex. Donec accumsan tristique mi bibendum ullamcorper. Sed scelerisque rutrum sapien, vel pharetra quam. Sed cursus magna nec lectus tincidunt interdum. Cras quis ipsum vitae est iaculis lobortis. Vivamus nisi sem, dictum eu metus at, hendrerit viverra lacus. In mattis nibh sed viverra euismod. Pellentesque cursus leo ipsum, in tempus eros ornare et. Donec feugiat non dolor sit amet aliquam. Mauris vel sodales elit. " +
+        "Aenean elementum metus non semper pharetra. Nunc quis nunc in metus fermentum pharetra vel quis nibh. Praesent nec tellus at leo sagittis porttitor et luctus ligula. Nam viverra aliquet tincidunt. Donec ultricies magna sit amet tellus consequat commodo. Vestibulum sed laoreet quam. Suspendisse potenti. Ut vestibulum in tortor ac scelerisque. Nam quis ex sed eros dapibus interdum eget bibendum purus. In ultrices felis orci, in rutrum ipsum volutpat non. Nulla elementum bibendum nisl at convallis. Vestibulum non fermentum magna. Suspendisse at est quis lectus aliquet posuere. Curabitur et libero vel purus scelerisque sodales in eu libero. Vestibulum eget quam sed purus elementum gravida. Mauris accumsan magna non urna vehicula ullamcorper.";
+
+    document.getElementById("added-image").onclick = function(){document.getElementById("add-image").click()};
+</script>
+</html>
