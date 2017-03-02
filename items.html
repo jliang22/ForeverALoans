@@ -42,14 +42,18 @@
  <div class="row">
   <div class="col-sm-12">
 
-<div class="btn-group-justified" role="group" aria-label="...">
+<center><div class="btn-group" role="group" aria-label="...">
   <div class="btn-group" role="group">
-    <button type="button" class="btn btn-default btn-lg" onClick="toggle_visibility('hideborrowed');">Borrowed</button>
+    <button type="button" class="btn btn-default btn-lg" onClick="showBorrowed()">Borrowed</button>
   </div>
   <div class="btn-group" role="group">
-    <button type="button" class="btn btn-default btn-lg" onClick="toggle_visibility('hidelend');">Lent</button>
+    <button type="button" class="btn btn-default btn-lg" onClick="showLent()">Lent</button>
+  </div>
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default btn-lg" onClick="showAll()">All</button>
   </div>
 </div>
+</center>
 
 
 
@@ -104,11 +108,25 @@
 </html>
 
 <script>
-function toggle_visibility(id) {
-   var e = document.getElementById(id);
-   if(e.style.display == 'block')
-      e.style.display = 'none';
-   else
-      e.style.display = 'block';
+document.onload = showAll();
+
+function showBorrowed(){
+	var e = document.getElementById('hideborrowed');
+	e.style.display = "block";
+	var lent = document.getElementById("hidelend")
+	lent.style.display = "none";
 }
+function showLent(){
+	var e = document.getElementById('hideborrowed');
+	e.style.display = "none";
+	var lent = document.getElementById("hidelend")
+	lent.style.display = "block";
+}
+function showAll(){
+	var e = document.getElementById('hideborrowed');
+	e.style.display = "block";
+	var lent = document.getElementById("hidelend")
+	lent.style.display = "block";
+}
+
 </script>
