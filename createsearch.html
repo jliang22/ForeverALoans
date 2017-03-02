@@ -58,7 +58,26 @@
 
 </div>
 
-<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:440px;width:800px;'><div id='gmap_canvas' style='height:440px;width:800px;'></div><div><small><a href="http://embedgooglemaps.com">embed google maps</a></small></div><div><small><a href="http://add-link-exchange.com/">high PR web directory</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(49.281954,-123.11707439999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+<div style='overflow:hidden;height:440px;width:800px;'>
+<div id='gmap_canvas' style='height:440px;width:800px;'></div>
+
+<div><small><a href="http://embedgooglemaps.com">embed google maps</a></small></div>
+<div><small><a href="http://add-link-exchange.com/">high PR web directory</a></small></div>
+
+<style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+
+</div>
+
+<script type='text/javascript'>
+
+function init_map(){
+    var myOptions = {zoom:12,center:new google.maps.LatLng(49.281954,-123.11707439999998),mapTypeId: google.maps.MapTypeId.ROADMAP};
+    map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+    google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});
+    infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+
+</script>
 
 </div>
 </div>
