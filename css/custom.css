@@ -101,3 +101,9 @@ h3 {
 .custom-form {
     font-size: 14px;
 }
+
+.cusbutt {
+    float:right;
+    padding-left:30px;
+    padding-right:30px;
+}
