@@ -28,14 +28,33 @@
 </head>
 
 <body>
+<span id="nav-show" class="glyphicon glyphicon-menu-hamburger" aria-hidden="true" onclick="showMenu()" style="cursor: pointer;"></span>
 
 <div class="container">
-    <div class="row">
-        <div class="col-sm-5">
-            <h3><a href="index.html">TJ!</a></h3></div>
-        <div class="col-sm-5"></div>
-    </div>
     <div class="custom_content">
+        <nav class="navbar navbar-inverse navbar-fixed-top hidden" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li id="nav-hide">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true" onclick="hideMenu()" style="cursor: pointer;"></span>
+                </li>
+                <li id="username">
+                    TJ
+                </li>
+                <li>
+                    <a href="profile.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;My Profile</a>
+                </li>
+                <li>
+                    <a href="items.html"><span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;Items</a>
+                </li>
+                <li>
+                    <a href="createPosting.html"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;&nbsp;Add Listing</a>
+                </li>
+                <li>
+                    <a href="createsearch.html"><span class="glyphicon glyphicon-search"></span>&nbsp;&nbsp;Search Listings</a>
+                </li>
+            </ul>
+        </nav>
+
         <h2 style="text-align: center;">Create a Listing</h2>
         <div class="row">
             <div class="col-sm-12">
@@ -83,5 +102,13 @@
         "Aenean elementum metus non semper pharetra. Nunc quis nunc in metus fermentum pharetra vel quis nibh. Praesent nec tellus at leo sagittis porttitor et luctus ligula. Nam viverra aliquet tincidunt. Donec ultricies magna sit amet tellus consequat commodo. Vestibulum sed laoreet quam. Suspendisse potenti. Ut vestibulum in tortor ac scelerisque. Nam quis ex sed eros dapibus interdum eget bibendum purus. In ultrices felis orci, in rutrum ipsum volutpat non. Nulla elementum bibendum nisl at convallis. Vestibulum non fermentum magna. Suspendisse at est quis lectus aliquet posuere. Curabitur et libero vel purus scelerisque sodales in eu libero. Vestibulum eget quam sed purus elementum gravida. Mauris accumsan magna non urna vehicula ullamcorper.";
 
     document.getElementById("added-image").onclick = function(){document.getElementById("add-image").click()};
+
+    function showMenu() {
+        document.getElementById("sidebar-wrapper").classList.remove("hidden");
+    }
+
+    function hideMenu() {
+        document.getElementById("sidebar-wrapper").classList.add("hidden");
+    }
 </script>
 </html>

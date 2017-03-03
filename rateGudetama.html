@@ -15,74 +15,92 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/simple-sidebar.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-    
-    
+
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 </head>
 
 <body>
+<span id="nav-show" class="glyphicon glyphicon-menu-hamburger" aria-hidden="true" onclick="showMenu()" style="cursor: pointer;"></span>
 
 <div class="container">
-  <div class="row">
-  <div class="col-sm-5">
-  <h3><a href="index.html">TJ!</a></h3></div>
-  <div class="col-sm-5"></div>
-</div>
-<div class="custom_content">
- <div class="row">
-  <div class="col-sm-8">
-  <div class="rating_shovel">
-  <h3>How was your experience borrowing from: <b style="color: indianred">IBYanLi</b></h3>
-  <table class="table table-striped">
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Owner</th>
-      <td>IBYan</td>
-    </tr>
-    <tr>
-      <th scope="row">Location</th>
-      <td>Richmond</td>
-    </tr>
-    <tr>
-      <th scope="row">User Rating</th>
-      <td> <span class="black">&#9733; &#9733; &#9733;</span><span class="grey">&#9733; &#9733;</span></td>
-    
-    </tr>
-  </tbody>
-</table>
-</div>
-  </div>
-  <div class="col-sm-4">
-  <div class ="thumbnail"><img src="http://i.imgur.com/vVNjD6r.jpg" " alt="...">
-  <div class="caption">
-        <h3>Gudetama Cosplay</h3>
-  </div>
-  </div>
-</div>
-</div>
-</div>
+    <div class="custom_content">
+        <nav class="navbar navbar-inverse navbar-fixed-top hidden" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li id="nav-hide">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true" onclick="hideMenu()" style="cursor: pointer;"></span>
+                </li>
+                <li id="username">
+                    TJ
+                </li>
+                <li>
+                    <a href="profile.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;My Profile</a>
+                </li>
+                <li>
+                    <a href="items.html"><span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;Items</a>
+                </li>
+                <li>
+                    <a href="createPosting.html"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;&nbsp;Add Listing</a>
+                </li>
+                <li>
+                    <a href="createsearch.html"><span class="glyphicon glyphicon-search"></span>&nbsp;&nbsp;Search Listings</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="rating_shovel">
+                    <h3>How was your experience borrowing from: <b style="color: indianred">IBYanLi</b></h3>
+                    <table class="table table-striped">
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Owner</th>
+                            <td>IBYan</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Location</th>
+                            <td>Richmond</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">User Rating</th>
+                            <td> <span class="black">&#9733; &#9733; &#9733;</span><span class="grey">&#9733; &#9733;</span></td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class ="thumbnail"><img src="http://i.imgur.com/vVNjD6r.jpg" " alt="...">
+                    <div class="caption">
+                        <h3>Gudetama Cosplay</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-<br>
-<div class="row center">
- <div class="btn-group" role="group" aria-label="...">
-  <div class="btn-group" role="group">
-    <button type="button" class="btn btn-default btn-lg"><a href="borrowedGude.html">Back</a></button>
-  </div>
-  <div class="btn-group" role="group">
-    <button type="button" class="btn btn-default btn-lg" onclick="confirm_alert()">Send Rating</button>
-  </div>
+    <br>
+    <div class="row center">
+        <div class="btn-group" role="group" aria-label="...">
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default btn-lg"><a href="borrowedGude.html">Back</a></button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default btn-lg" onclick="confirm_alert()">Send Rating</button>
+            </div>
 
-</div>
-</div>
+        </div>
+    </div>
 
 </div>
 
@@ -91,7 +109,15 @@
 </html>
 
 <script>
-function confirm_alert() {
-    alert("Rating Saved!");
-}
+    function confirm_alert() {
+        alert("Rating Saved!");
+    }
+
+    function showMenu() {
+        document.getElementById("sidebar-wrapper").classList.remove("hidden");
+    }
+
+    function hideMenu() {
+        document.getElementById("sidebar-wrapper").classList.add("hidden");
+    }
 </script>

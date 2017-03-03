@@ -15,103 +15,131 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/simple-sidebar.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-    
-    
+
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 </head>
 
 <body>
+<span id="nav-show" class="glyphicon glyphicon-menu-hamburger" aria-hidden="true" onclick="showMenu()" style="cursor: pointer;"></span>
 
 <div class="container">
-<div class="row">
-  <div class="col-sm-5">
-  <h3><a href="index.html">TJ!</a></h3></div>
-  <div class="col-sm-5"></div>
-</div>
-<div class=profile>
+    <div class="custom_content">
+        <nav class="navbar navbar-inverse navbar-fixed-top hidden" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li id="nav-hide">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true" onclick="hideMenu()" style="cursor: pointer;"></span>
+                </li>
+                <li id="username">
+                    TJ
+                </li>
+                <li>
+                    <a href="profile.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;My Profile</a>
+                </li>
+                <li>
+                    <a href="items.html"><span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;Items</a>
+                </li>
+                <li>
+                    <a href="createPosting.html"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;&nbsp;Add Listing</a>
+                </li>
+                <li>
+                    <a href="createsearch.html"><span class="glyphicon glyphicon-search"></span>&nbsp;&nbsp;Search Listings</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="profile">
+        <div class="row profile_reminder">
+            <div class = "col-sm-7" style="padding-left:0px; padding-right: 0px">
+                <h3><b>Reminder(s):</b></h3>
+                <h4>You have: 1 item(s) checked out<br></h4>
+                <ul>
+                    <li>Due Tuesday, Feb 14 <a href="borrowedGude.html">Gudetama Cosplay</a></li>
+                </ul>
+            </div>
+            <div class = "col-sm-5">
+                <div class ="thumbnail"><img src="http://mobga.me/images/dragon-mania-legends/dragons/sunflower-mugshot.png" class = "img-rounded" width="150px" height = "150px"alt="...">
 
-<div class="row profile_reminder">
-<div class = "col-sm-7" style="padding-left:0px; padding-right: 0px">
-  <h3><b>Reminder(s):</b></h3>
-  <h4>You have: 1 item(s) checked out<br></h4>
-  <ul>
-  <li>Due Tuesday, Feb 14 <a href="borrowedGude.html">Gudetama Cosplay</a></li>
-</ul>
-</div>
-<div class = "col-sm-5">
-<div class ="thumbnail"><img src="http://mobga.me/images/dragon-mania-legends/dragons/sunflower-mugshot.png" class = "img-rounded" width="150px" height = "150px"alt="...">
+                </div>
+            </div>
 
-</div>
-</div>
+            <div class=" row profile_loans">
+                <div class = "col-sm-7">
+                    <h3><b>Your Loans</b></h3>
+                    <ul>
+                        <li><a href="lentMittens.html">Mittens</a> (Available)</li>
+                        <li><a href="lentHat.html">Hat</a> (Due back Wednesday, April, 30, 2017)</li>
+                        <li><a href="lentBook.html">Book</a> (Pending)</li>
+                    </ul>
+                </div>
+                <div class = "col-sm-5">
+                    <table class="table table-striped">
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Name</th>
+                            <td>TJ Liyanna</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Location</th>
+                            <td>Vancouver</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Email</th>
+                            <td>cpsc444folks@gmail.com</td>
 
-<div class=" row profile_loans">
-<div class = "col-sm-7">
-  <h3><b>Your Loans</b></h3>
-<ul>
-  <li><a href="lentMittens.html">Mittens</a> (Available)</li>
-  <li><a href="lentHat.html">Hat</a> (Due back Wednesday, April, 30, 2017)</li>
-    <li><a href="lentBook.html">Book</a> (Pending)</li>
-</ul>
-</div>
-<div class = "col-sm-5">
- <table class="table table-striped">
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Name</th>
-      <td>TJ Liyanna</td>
-    </tr>
-    <tr>
-      <th scope="row">Location</th>
-      <td>Vancouver</td>
-    </tr>
-    <tr>
-      <th scope="row">Email</th>
-      <td>cpsc444folks@gmail.com</td>
-    
-    </tr>
-    
-  </tbody>
-</table>
-</div>
-</div>
+                        </tr>
 
-<div class="row profile_request">
-<div class = "col-sm-7">
-  <h3><b><a href="requests.html">Request(s):</a></b></h3>
-<ul>
-  <li>2</li>
-</ul>
-</div>
-<div class = "col-sm-5">
-<button type="button" class="btn btn-default btn-lg">Edit Profile</button>
-</div>
-</div>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
 
-<div class="row profile_rating">
-<div class = "col-sm-6">
-  <h3><b>Ratings:</b></h3>
-<p>Borrower: <span class="black">&#9733; &#9733; &#9733;</span><span class="grey">&#9733; &#9733;</span></p>
-<p>Lender: <span class="black">&#9733; &#9733; &#9733; &#9733;</span><span class="grey">&#9733;</span></p>
-</div>
-</div>
-<br>
-<div class="btn-group">
-  <button type="button" class="btn btn-default btn-lg" onclick="window.location.href='createPosting.html'">Create a Posting</button>
-</div>
-</div>
+            <div class="row profile_request">
+                <div class = "col-sm-7">
+                    <h3><b><a href="requests.html">Request(s):</a></b></h3>
+                    <ul>
+                        <li>2</li>
+                    </ul>
+                </div>
+                <div class = "col-sm-5">
+                    <button type="button" class="btn btn-default btn-lg">Edit Profile</button>
+                </div>
+            </div>
+
+            <div class="row profile_rating">
+                <div class = "col-sm-6">
+                    <h3><b>Ratings:</b></h3>
+                    <p>Borrower: <span class="black">&#9733; &#9733; &#9733;</span><span class="grey">&#9733; &#9733;</span></p>
+                    <p>Lender: <span class="black">&#9733; &#9733; &#9733; &#9733;</span><span class="grey">&#9733;</span></p>
+                </div>
+            </div>
+            <br>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default btn-lg" onclick="window.location.href='createPosting.html'">Create a Posting</button>
+            </div>
+        </div>
 
 
 
-</div>
+    </div>
 
 </body>
 
+<script type="text/javascript">
+    function showMenu() {
+        document.getElementById("sidebar-wrapper").classList.remove("hidden");
+    }
+
+    function hideMenu() {
+        document.getElementById("sidebar-wrapper").classList.add("hidden");
+    }
+</script>
 </html>
