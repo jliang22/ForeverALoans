@@ -48,12 +48,25 @@
 <p style="color: indianred">** View more information by clicking on the marker(s)</p>
 
 <div class="row">
-<div class="col-sm-6">
-<p>Searched For: <input type="text" name="search" value="Spoon"></p>
-</div>
-<div class="col-sm-6">
-<p>Location: <input type="text" name="location" value="Vancouver"></p>
-</div>
+<form class="form-inline">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="form-group">
+                        <label for="search">Item:</label>
+                        <input type="text" class="form-control" name="search" value="Spoon">
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="form-group">
+                        <label for="location">Location: </label>
+                        <input type="text" class="form-control" name="location" value = "Vancouver">
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <button type="button" id="btn-search" class="btn btn-default btn-md cusbutt">Search</button>
+                </div>
+            </div>
+        </form>
 </div>
 <p style="color: cornflowerblue">Found: 2 Result(s)</p>
 <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:440px;width:800px;'>
