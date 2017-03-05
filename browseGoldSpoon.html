@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Forever A Loans</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-5">
+            <h3><a href="index.html">TJ!</a></h3></div>
+        <div class="col-sm-5"></div>
+    </div>
+    <div class="custom_content">
+        <div class="row">
+            <div class="col-sm-8">
+                <table class="table table-striped">
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row" class="bg-success">Status</th>
+                        <td class = "bg-success">Available  <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Price</th>
+                        <td>$10/day</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Owner</th>
+                        <td>RichGuy91</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Lender Rating</th>
+                        <td><span class="black">&#9733;&#9733; &#9733; &#9733;</span><span class="grey">&#9733;</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Fine</th>
+                        <td>$5/Day for late return</td>
+
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Notes</th>
+                        <td>Pure gold. Pure money.</td>
+
+                    </tr>
+
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-sm-4">
+                <div class ="thumbnail"><img src="assets/goldspoon.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Gold Spoon</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row center">
+            <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default btn-lg" onclick="goBack()">Back</button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" id="myBtn" class="btn btn-default btn-lg">Request Item</></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form>
+                <div>
+                    <h3>Request for: Spoon</h3>
+                    <label class="ui-hidden-accessible">Subject</label><br>
+                    <input type="text" placeholder="Subject"><br>
+                    <label class="ui-hidden-accessible">Message</label><br>
+                    <textarea type="text" class="form-control" placeholder="Hi I am interested in ..." rows="7"></textarea>
+                    <br>
+                    <button type="button" class="closebutton btn btn-default btn-lg">Submit</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
+
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+
+    var modal = document.getElementById('myModal');
+
+    var btn = document.getElementById("myBtn");
+
+    var span = document.getElementsByClassName("close")[0];
+    var submit = document.getElementsByClassName("closebutton")[0];
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    submit.onclick = function() {
+        modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>

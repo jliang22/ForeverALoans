@@ -68,7 +68,7 @@
             </div>
         </form>
 </div>
-<p style="color: cornflowerblue">Found: 2 Result(s)</p>
+<p style="color: cornflowerblue">Found: 4 Result(s)</p>
 <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:440px;width:800px;'>
 
 
@@ -88,7 +88,7 @@
 
 </div>
 
-<script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(49.26060520000001,-123.24599390000003),mapTypeId: google.maps.MapTypeId.ROADMAP};
+<script type='text/javascript'>function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(49.268630, -123.228090),mapTypeId: google.maps.MapTypeId.ROADMAP};
 
 var str = "Metal Spoon - $5/day";
 var metalspoon = str.link("browseSpoon.html");
@@ -96,29 +96,53 @@ var metalspoon = str.link("browseSpoon.html");
 var metal = "Plastic Spoon - $2/day";
 var plasticspoon = metal.link("browsePlasticSpoon.html");
 
+var dirty = "Dirty Spoons - $1/day";
+var dirtyspoon = dirty.link("browseDirtySpoon.html");
+
+var gold = "Gold Spoon - $10/day";
+var goldspoon = gold.link("browseGoldSpoon.html");
+
 map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
 
+// plastic spoon marker
 
 marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(49.26060520000001,-123.24599390000003)});
 
 infowindow = new google.maps.InfoWindow({content: plasticspoon+ '<br>Location: UBC<br>'});
 
-
 google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});
 
+infowindow.open(map,marker);
 
-    infowindow.open(map,marker);
+// metal spoon marker
 
-
-
-    marker1 = new google.maps.Marker({map: map,position: new google.maps.LatLng(49.264136,-123.18015200000002)});
-
+marker1 = new google.maps.Marker({map: map,position: new google.maps.LatLng(49.264136,-123.18015200000002)});
 
 infowindow1 = new google.maps.InfoWindow({content:metalspoon + '<br>Location: Alma Street<br>'});
 
 google.maps.event.addListener(marker1, 'click', function(){infowindow1.open(map,marker1);});
 
 infowindow1.open(map,marker1);
+
+// dirty spoon marker
+
+marker2 = new google.maps.Marker({map: map,position: new google.maps.LatLng(49.249659, -123.201315)});
+
+infowindow2 = new google.maps.InfoWindow({content:dirtyspoon + '<br>Location: W King Edward Avenue<br>'});
+
+google.maps.event.addListener(marker2, 'click', function(){infowindow2.open(map,marker2);});
+
+infowindow2.open(map,marker2);
+
+// gold spoon marker
+
+marker3 = new google.maps.Marker({map: map,position: new google.maps.LatLng(49.276059, -123.144328)});
+
+infowindow3 = new google.maps.InfoWindow({content:goldspoon + '<br>Location: H. R. MacMillan Space Centre<br>'});
+
+google.maps.event.addListener(marker3, 'click', function(){infowindow3.open(map,marker3);});
+
+infowindow3.open(map,marker3);
 
 }
     google.maps.event.addDomListener(window, 'load', init_map);
