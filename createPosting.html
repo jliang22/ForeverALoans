@@ -66,7 +66,7 @@
                     </textarea>
                     </div>
                 </form>
-                <button type="button" class="btn btn-default" onclick="window.location.href='createdListing.html'">Add Item for Lending</button>
+                <button id="btn-create" class="btn btn-default">Add Item for Lending</button>
             </div>
         </div>
     </div>
@@ -76,11 +76,15 @@
 </body>
 
 <script type="text/javascript">
-    document.getElementById("btn-create").onclick = function() {window.location.href = 'items.html'};
+    document.getElementById("btn-create").onclick = function() {window.location.href = 'createdListing.html'};
 
-    document.getElementById("terms").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vestibulum bibendum nisl, et feugiat dui suscipit vel. Nulla posuere tristique mattis. Quisque condimentum mauris justo, vel interdum sem congue sit amet. Donec eu mollis dolor. Quisque quam ligula, tempus eget tortor eu, dapibus mattis augue. Morbi nec ante diam. Morbi vel viverra dolor. Ut sit amet faucibus ligula. Aenean vitae rutrum velit, eu hendrerit nisi. Nunc sem justo, iaculis at dolor id, vulputate hendrerit diam. Ut risus sapien, elementum efficitur pharetra id, sagittis sed leo. Maecenas ultrices augue sed est lobortis, quis auctor ante luctus. Quisque volutpat purus risus." +
-        "Integer quis lacinia massa, non scelerisque felis. Integer urna purus, cursus vel convallis sit amet, cursus a elit. Sed non enim vitae ante finibus imperdiet a a augue. Phasellus eget metus tincidunt, ornare ante sit amet, posuere turpis. Mauris tristique, risus porttitor elementum varius, nibh mauris fringilla lorem, at ullamcorper nisl nunc at justo. Duis mauris nunc, ornare quis dui eu, placerat auctor ex. Donec accumsan tristique mi bibendum ullamcorper. Sed scelerisque rutrum sapien, vel pharetra quam. Sed cursus magna nec lectus tincidunt interdum. Cras quis ipsum vitae est iaculis lobortis. Vivamus nisi sem, dictum eu metus at, hendrerit viverra lacus. In mattis nibh sed viverra euismod. Pellentesque cursus leo ipsum, in tempus eros ornare et. Donec feugiat non dolor sit amet aliquam. Mauris vel sodales elit. " +
-        "Aenean elementum metus non semper pharetra. Nunc quis nunc in metus fermentum pharetra vel quis nibh. Praesent nec tellus at leo sagittis porttitor et luctus ligula. Nam viverra aliquet tincidunt. Donec ultricies magna sit amet tellus consequat commodo. Vestibulum sed laoreet quam. Suspendisse potenti. Ut vestibulum in tortor ac scelerisque. Nam quis ex sed eros dapibus interdum eget bibendum purus. In ultrices felis orci, in rutrum ipsum volutpat non. Nulla elementum bibendum nisl at convallis. Vestibulum non fermentum magna. Suspendisse at est quis lectus aliquet posuere. Curabitur et libero vel purus scelerisque sodales in eu libero. Vestibulum eget quam sed purus elementum gravida. Mauris accumsan magna non urna vehicula ullamcorper.";
+    document.getElementById("terms").innerHTML = "Please read these Terms and Conditions carefully before using the website. " +
+            "Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. " +
+            "These Terms apply to all visitors, users and others who access or use the Service. " +
+            "By accessing or using the Service you agree to be bound by these Terms. If you disagree " +
+            "with any part of the terms then you may not access the Service. " +
+            "Be nice. " +
+            "That's all.";
 
     document.getElementById("added-image").onclick = function(){document.getElementById("add-image").click()};
 </script>
