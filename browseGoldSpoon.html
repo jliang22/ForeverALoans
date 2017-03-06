@@ -28,7 +28,9 @@
 </head>
 
 <body>
+
 <span id="nav-show" class="glyphicon glyphicon-menu-hamburger" aria-hidden="true" onclick="showMenu()" style="cursor: pointer;"></span>
+
 <div class="container">
     <div class="custom_content">
         <nav class="navbar navbar-inverse navbar-fixed-top hidden" id="sidebar-wrapper" role="navigation">
@@ -64,25 +66,25 @@
                     </tr>
                     <tr>
                         <th scope="row">Price</th>
-                        <td>$2/Month</td>
+                        <td>$10/day</td>
                     </tr>
                     <tr>
                         <th scope="row">Owner</th>
-                        <td>JessicaP</td>
+                        <td>RichGuy91</td>
                     </tr>
                     <tr>
                         <th scope="row">Lender Rating</th>
-                        <td><span class="black">&#9733; &#9733; &#9733; &#9733;</span><span class="grey">&#9733;</span></td>
+                        <td><span class="black">&#9733;&#9733; &#9733; &#9733;</span><span class="grey">&#9733;</span></td>
                     </tr>
                     <tr>
                         <th scope="row">Fine</th>
-                        <td>$1/Day for late return</td>
+                        <td>$5/Day for late return</td>
 
                     </tr>
-      
+
                     <tr>
                         <th scope="row">Notes</th>
-                        <td>Or just keep it.</td>
+                        <td>Pure gold. Pure money.</td>
 
                     </tr>
 
@@ -91,9 +93,9 @@
                 </table>
             </div>
             <div class="col-sm-4">
-                <div class ="thumbnail"><img src="assets/plasticspoon.jpg" alt="...">
+                <div class ="thumbnail"><img src="assets/goldspoon.jpg" alt="...">
                     <div class="caption">
-                        <h3>Metal Spoon</h3>
+                        <h3>Gold Spoon</h3>
                     </div>
                 </div>
             </div>
@@ -112,67 +114,68 @@
             </div>
         </div>
 
-</div>
+    </div>
 
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <div class="modal-content">
-   <span class="close">&times;</span>
-     <form method="post" action="/action_page_post.php">
-        <div>
-          <h3>Request for: Spoon</h3>
-          <label class="ui-hidden-accessible">Subject</label><br>
-          <input type="text" placeholder="Subject"><br>
-          <label class="ui-hidden-accessible">Message</label><br>
-          <textarea type="text" class="form-control" placeholder="Hi I am interested in ..." rows="7"></textarea>
-          <br>
-           <button type="button" class="closebutton btn btn-default btn-lg">Submit</button>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form>
+                <div>
+                    <h3>Request for: Spoon</h3>
+                    <label class="ui-hidden-accessible">Subject</label><br>
+                    <input type="text" placeholder="Subject"><br>
+                    <label class="ui-hidden-accessible">Message</label><br>
+                    <textarea type="text" class="form-control" placeholder="Hi I am interested in ..." rows="7"></textarea>
+                    <br>
+                    <button type="button" class="closebutton btn btn-default btn-lg">Submit</button>
+                </div>
+            </form>
         </div>
-      </form>
-  </div>
 
-</div>
+    </div>
+
 
 </body>
 
 </html>
 
 
-
 <script>
-function goBack() {
-    window.history.back();
-}
+    function goBack() {
+        window.history.back();
+    }
 
-var modal = document.getElementById('myModal');
+    var modal = document.getElementById('myModal');
 
-var btn = document.getElementById("myBtn");
+    var btn = document.getElementById("myBtn");
 
-var span = document.getElementsByClassName("close")[0];
-var submit = document.getElementsByClassName("closebutton")[0];
+    var span = document.getElementsByClassName("close")[0];
+    var submit = document.getElementsByClassName("closebutton")[0];
 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
 
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-submit.onclick = function() {
-    modal.style.display = "none";
-}
-window.onclick = function(event) {
-    if (event.target == modal) {
+    span.onclick = function() {
         modal.style.display = "none";
     }
-}
-function showMenu() {
-    document.getElementById("sidebar-wrapper").classList.remove("hidden");
-}
 
-function hideMenu() {
-    document.getElementById("sidebar-wrapper").classList.add("hidden");
-}
+    submit.onclick = function() {
+        modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    
+    function showMenu() {
+        document.getElementById("sidebar-wrapper").classList.remove("hidden");
+    }
+
+    function hideMenu() {
+        document.getElementById("sidebar-wrapper").classList.add("hidden");
+    }
 </script>
